@@ -20,6 +20,15 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
+          <mirrors>
+              <mirror>
+                <id>public</id>
+                <name>Nexus Openshift CDK</name>
+                <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/groups/public/</url>
+                <mirrorOf>central</mirrorOf>
+              </mirror>
+            </mirrors>
+
   <profiles>
     <profile>
       <id>fusesource.repo</id>
@@ -27,8 +36,7 @@
         <repository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
-          <!--<url>https://repo.fusesource.com/nexus/content/groups/public</url>-->
-          <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/repositories/fusesource-m2/</url>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -40,8 +48,7 @@
         <repository>
           <id>fusesource.ea</id>
           <name>FuseSource Community Early Access Release Repository</name>
-          <!--<url>https://repo.fusesource.com/nexus/content/groups/ea</url>-->
-          <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/repositories/fusesource-ea/</url>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -53,8 +60,7 @@
         <repository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
-          <!--<url>https://maven.repository.redhat.com/ga</url>-->
-          <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/repositories/redhat-ga/</url>
+          <url>https://maven.repository.redhat.com/ga</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -68,8 +74,7 @@
         <pluginRepository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
-          <!--<url>https://repo.fusesource.com/nexus/content/groups/public</url>-->
-          <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/repositories/fusesource-m2/</url>
+          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -81,8 +86,7 @@
         <pluginRepository>
           <id>fusesource.ea</id>
           <name>FuseSource Community Early Access Release Repository</name>
-          <!--<url>https://repo.fusesource.com/nexus/content/groups/ea</url>-->
-          <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/repositories/redhat-ga/</url>
+          <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -94,7 +98,7 @@
         <pluginRepository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
-          <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/repositories/redhat-ga/</url>
+          <url>https://maven.repository.redhat.com/ga</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
