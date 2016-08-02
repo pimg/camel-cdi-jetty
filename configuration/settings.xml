@@ -22,11 +22,12 @@
 
           <mirrors>
               <mirror>
-                <id>public</id>
+                <id>internal</id>
                 <name>Nexus Openshift CDK</name>
-                <url>http://nexus/content/groups/public/</url>
-                <mirrorOf>central</mirrorOf>
+                <url>http://nexus-sample-project.rhel-cdk.10.1.2.2.xip.io/content/groups/public/</url>
+                <mirrorOf>*</mirrorOf>
               </mirror>
+
             </mirrors>
 
   <profiles>
